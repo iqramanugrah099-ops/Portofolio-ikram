@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     M. Iqram Anugrah — Personal Portfolio
+     One-page site: Hero, About, Portfolio slider, Gallery, Contact
+     Theme: modern dark green ("Deep Forest")
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M. Iqram Anugrah — Photography &amp; Videography Portfolio</title>
+  <meta name="description" content="Personal portfolio of M. Iqram Anugrah, a photography & videography enthusiast and English Literature student at Universitas Halu Oleo, based in Kendari, Indonesia." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="M. Iqram Anugrah — Photography & Videography Portfolio" />
+  <meta property="og:description" content="Selected photos, stories and visual work by M. Iqram Anugrah from Kendari, Indonesia." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts: Poppins (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons: Lucide -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ LOADER (shown once on first open) ============ -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"><i data-lucide="camera"></i></div>
+    <div class="loader-text">
+      <p class="loader-name">M. Iqram Anugrah</p>
+      <p class="loader-sub">Loading portfolio</p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR (sticky, with scroll-spy) ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar-inner">
+      <a href="#home" class="brand">IA<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Say Hello</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-particles" id="particles" aria-hidden="true"></div>
+    <div class="blob blob-a" data-parallax="0.12" aria-hidden="true"></div>
+    <div class="blob blob-b" data-parallax="-0.08" aria-hidden="true"></div>
+
+    <div class="hero-content" data-parallax="0.06">
+      <!-- Profile photo with animated glow ring -->
+      <div class="avatar-wrap">
+        <div class="avatar-glow" aria-hidden="true"></div>
+        <div class="avatar-ring" aria-hidden="true"></div>
+        <img
+          src="https://i.ibb.co/67sfg94K/IMG-20260121-114229.jpg"
+          alt="Portrait of M. Iqram Anugrah"
+          class="avatar" />
+      </div>
+
+      <p class="hero-badge">Photography &amp; Videography Enthusiast</p>
+      <h1 class="hero-name">M. Iqram Anugrah</h1>
+      <p class="hero-location"><i data-lucide="map-pin"></i> Kendari, Sulawesi Tenggara, Indonesia</p>
+
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+      <i data-lucide="chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section-surface" id="about">
+    <div class="container about-grid">
+      <div class="about-photo reveal">
+        <div class="about-photo-glow" aria-hidden="true"></div>
+        <img
+          src="https://i.ibb.co/67sfg94K/IMG-20260121-114229.jpg"
+          alt="Photo of M. Iqram Anugrah" />
+        <div class="about-stat">
+          <p class="stat-num">5+</p>
+          <p class="stat-label">years behind the lens</p>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <div class="reveal">
+          <p class="eyebrow">About me</p>
+          <h2>Capturing stories through a lens</h2>
+        </div>
+        <div class="reveal" data-delay="100">
+          <p>
+            I'm M. Iqram Anugrah, an English Literature student at Universitas Halu Oleo based in
+            Kendari. What started as a hobby of photographing everyday moments has grown into a
+            passion for visual storytelling — from quiet portraits to cinematic short videos.
+          </p>
+          <p>
+            I love finding beauty in ordinary places: warm light after rain, the rhythm of the
+            city, and the people who live in it. Every frame is a small story waiting to be told.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <div class="info-card reveal">
+            <span class="icon-chip"><i data-lucide="camera"></i></span>
+            <div><h3>Photography</h3><p>Portraits, street scenes and golden-hour frames.</p></div>
+          </div>
+          <div class="info-card reveal" data-delay="90">
+            <span class="icon-chip"><i data-lucide="clapperboard"></i></span>
+            <div><h3>Videography</h3><p>Short films and visual stories from everyday life.</p></div>
+          </div>
+          <div class="info-card reveal" data-delay="180">
+            <span class="icon-chip"><i data-lucide="graduation-cap"></i></span>
+            <div><h3>English Literature</h3><p>Student at Universitas Halu Oleo.</p></div>
+          </div>
+          <div class="info-card reveal" data-delay="270">
+            <span class="icon-chip"><i data-lucide="map-pin"></i></span>
+            <div><h3>Kendari</h3><p>Based in Sulawesi Tenggara, Indonesia.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO (draggable carousel) ============ -->
+  <section class="portfolio" id="portfolio">
+    <div class="container section-head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Selected works</h2>
+      <p class="section-sub">Drag, swipe or use the arrows to explore my favourite frames.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="carousel-wrap">
+        <div class="carousel" id="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Slides are rendered by js/main.js from PORTFOLIO_ITEMS -->
+          </div>
+        </div>
+        <button class="carousel-arrow prev" id="carouselPrev" aria-label="Previous photo"><i data-lucide="chevron-left"></i></button>
+        <button class="carousel-arrow next" id="carouselNext" aria-label="Next photo"><i data-lucide="chevron-right"></i></button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY (masonry grid, scroll reveal) ============ -->
+  <section class="gallery section-surface" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Moments in still</h2>
+        <p class="section-sub">A little collection of places, faces and light.</p>
+      </div>
+      <!-- Gallery items are rendered by js/main.js -->
+      <div class="masonry" id="masonry"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's work together</h2>
+        <p>
+          Have a project, an event, or just want to talk about photography? My inbox is always
+          open — I'd love to hear from you.
+        </p>
+        <p class="contact-location">
+          <span class="icon-chip"><i data-lucide="map-pin"></i></span>
+          Kendari, Sulawesi Tenggara, Indonesia
+        </p>
+
+        <!-- Social links: replace href="#" with your real profiles -->
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="120">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" maxlength="100" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" maxlength="255" placeholder="you@example.com" />
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" maxlength="1000" placeholder="Tell me about your project..."></textarea>
+          </label>
+
+          <p class="form-error" id="formError" role="alert" hidden></p>
+
+          <button type="submit" class="btn btn-primary btn-send" id="sendBtn">
+            Send Message <i data-lucide="send"></i>
+          </button>
+        </form>
+
+        <!-- Shown after a successful (demo) submit -->
+        <div class="form-success" id="formSuccess" hidden>
+          <i data-lucide="check-circle-2"></i>
+          <p class="success-title">Message sent!</p>
+          <p class="success-sub">Thanks for reaching out — I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <span class="footer-icon"><i data-lucide="camera"></i></span>
+    <p class="footer-name">M. Iqram Anugrah<span>.</span></p>
+    <p class="footer-copy">© <span id="year"></span> M. Iqram Anugrah · Kendari, Sulawesi Tenggara, Indonesia</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
